@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link href="style.css" type="text/css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>The International Dhaba </title>
+
+<script type="text/javascript">
+function arshfunc(){
+	var name1=document.forms['order']['fname'].value;
+	if(name1==""||name1==null)
+	{
+		alert("Please fill out First Name");
+		return false;	
+	}
+	else{}
+	
+	var name2=document.forms['order']['lname'].value;
+	if(name2==""||name2==null)
+	{
+		alert("Please fill out Last Name");
+		return false;	
+	}
+	else{}
+	
+	var gend=document.forms['order']['gender'].value;
+	if(gend==""||gend==null)
+	{
+		alert("Please choose a Gender");
+		return false;	
+	}
+	else{}
+	
+	var em=document.forms['order']['email'].value;
+	if(em==""||em==null)
+	{
+		alert("Please enter your Email address");
+		return false;	
+	}
+	else{}
+	
+	var num=document.forms['order']['number'].value;
+	if(num==""||num==null)
+	{
+		alert("Please enter your Contact Number");
+		return false;	
+	}
+	else{}
+	
+	var lin1=document.forms['order']['l1'].value;
+	if(lin1==""||lin1==null)
+	{
+		alert("Please enter your Address");
+		return false;	
+	}
+	else{}
+	
+	var cit=document.forms['order']['city'].value;
+	if(cit==""||cit==null)
+	{
+		alert("Please choose a City");
+		return false;	
+	}
+	else{}
+	
+	var loc=document.forms['order']['Location'].value;
+	if(loc==""||loc==null)
+	{
+		alert("Please choose a Location");
+		return false;	
+	}
+	else{}
+	
+	var pn=document.forms['order']['pin'].value;
+	if(pn==""||pn==null)
+	{
+		alert("Please enter your Pincode");
+		return false;	
+	}
+	else{}
+	
+	
+}
+
+</script>
+</head>
+
+<body>
+<div class="Full">
+
+<div class="A">
+
+<div class="logo">
+<img src="images/logo.jpg" width="300" />
+</div>
+
+<input type="search" placeholder="Search" class="search" />
+
+<h1 class="title"><b>The Punjab International &trade; </b></h1>
+<h3 class="title2"><b>Peg . Sheg . Egg . Leg</b></h3>
+
+<hr class="line1" color="#000000"/>
+
+<div class="men" >
+<ul ><li class="menu"><b style="font-size:20px"><a href="main.html">Home</a></b></li>
+	<li class="menu"><b style="font-size:20px">Menu</b></li>
+    <li class="menu"><b style="font-size:20px">About</b></li>
+    <li class="menu"><b style="font-size:20px"><a href="Gallery1.html">Gallery</a></b></li>
+    <li class="menu"><b style="font-size:20px">Contact</b></li>
+    <li class="menu"><b style="font-size:20px"><a href="order.html">Order</a></b></li></ul>
+
+</div>
+</div>
+</div>
+
+
+<div class="form" style="position: relative;top: 200px;">
+
+<form action="placed.html" method="post" enctype="multipart/form-data" name="order" class="form" onsubmit="return arshfunc()" >
+
+<label><h2><b> Please enter the following details:</b></h2></label>
+<table>
+<label><b>Personal Details:</b></label>
+<tr>
+<td><input type="text" placeholder="First Name" name="fname" /></td>
+<td><input type="text" placeholder="Last Name" name="lname" /></td></tr>
+
+<tr>
+<td><b>Gender:</b> <br />
+Male<input type="radio" value="male" name="gender" />
+Female<input type="radio" value="female" name="gender" /></td>
+</tr>
+
+<tr>
+<td><input type="email" placeholder="E-mail address" name="email" /></td>
+</tr>
+
+<tr>
+<td><input type="number" placeholder="Mobile Number" name="number" /></td>
+</tr>
+
+</table>
+
+<br />
+
+<table>
+<tr>
+<td><b>Address Details:</b></td>
+</tr>
+<tr>
+
+<td><input type="text" placeholder="Line 1" name="l1"</td>
+<td><input type="text" placeholder="Line 2" name="l2"</td>
+</tr>
+
+
+<tr>
+<td><label>Select City:</label><br />
+
+<select name="city" >
+<option value="Mohali">Mohali</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Panchkula">Panchkula</option>
+<option value="New Delhi">New Delhi</option>
+<option value="Himalayas">Himalayas</option>
+<option value="Andaman">Andaman</option>
+<option value="Arabian Sea">Arabian Sea</option>
+
+</select>
+
+
+</td>
+</tr>
+
+<tr>
+<td><label>Select Location:</label><br />
+
+<select name="Location" >
+<option value="Phase1">Phase 1</option>
+<option value="Phase2">Phase 2</option>
+<option value="Phase3">Phase 3</option>
+<option value="Phase4">Phase 4</option>
+<option value="Phase5">Phase 5</option>
+<option value="Phase6">Phase 6</option>
+<option value="Phase7">Phase 7</option>
+<option value="Phase8">Phase 8</option>
+<option value="Phase9">Phase 9</option>
+<option value="Phase10">Phase 10</option>
+<option value="Phase11">Phase 11</option>
+<option value="Phase12">Phase 12</option>
+<option value="Phase13">Phase 13</option>
+</select>
+
+</td>
+</tr>
+
+<tr>
+<td><input type="number" placeholder="Pincode" name="pin" /></td>
+</tr>
+
+</table>
+<br />
+<br />
+
+
+<table>
+ <tr>
+<td>
+<Button type="submit" class="submit" onclick="arshfunc()">Place Order</Button></td>
+<td>
+<input type="reset" value="Reset Order" class="submit" /></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</div>
+
+<img src="images/Santa-Riding-a-Scooter--59323.jpg" style="
+max-width: 450px;position: relative;left:800px; bottom: 200px;"/>
+
+<div class="footer" >
+
+<div class="fall" style="position: relative;bottom: 7px;">
+<h2 style="color:#FFF">Send us a message!</h2>
+<form action="placed.html" method="post">
+
+<fieldset style="margin:0; margin: 0px;position: relative;bottom: 18px; color:#FFF">
+<legend >Contact Form</legend>
+<label>Name:</label>
+<input id="fullname" name="fullname" type="text" value="" />
+</label>
+<br /><br />
+
+
+<label>Email:</label>
+ <input id="emailaddress" name="emailaddress" type="text" value="" />
+<br />
+<br />
+
+</label>
+<label for="message">Message:<br />
+<textarea id="message" name="message" cols="40" rows="4"></textarea>
+</label>
+<p> <input type="submit" value="Submit" />&nbsp;
+    <input type="reset" value="Reset" />
+</p>
+</fieldset>
+</form>
+</div>
+
+<div class="fall" style="position: relative;bottom: 7px;">
+<h2 style="color:#FFF">Company Information:</h2>
+<ul class="info" style="color:#FFF">
+    <li class="info">Copyright &copy; 2019 - All Rights Reserved</li>
+     <li class="info">Le Dhaba International</li>
+     <li class="info">Registered in England &amp; Wales</li>
+     <li class="info">Company No. 2352345345</li>
+     <li class="last">VAT No. 75656575</li></ul>
+<h2 style="color:#FFF">Stay in The Know !</h2>
+  <p><a href="#">Get Our E-Newsletter</a> | <a href="#">Grab The RSS Feed</a></p>
+</div>
+
+
+<div class="fall" style="position: relative;bottom: 7px;">
+        <h2 style="color:#FFF">Our Contact Details !</h2>
+        <ul class="info" style="color:#FFF">
+          <li class="info">Le Dhaba International</li>
+          <li class="info">Near XYZ &amp </li>
+          <li class="info">Mohali</li>
+          <li class="info">160062</li>
+          <li class="info">Tel: 0172 5347823728</li>
+          <li class="info">Fax: 0172 2378782355</li>
+          <li class="info">Email: TheDhaba@ucantafford.com</li>
+          <li class="last">Facebook: <a href="www.facebook.com/iamArsh">Arshdeep Singh</a></li>
+        </ul>
+</div>
+
+
+
+
+</body>
+</html>
